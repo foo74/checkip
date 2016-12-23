@@ -1,0 +1,13 @@
+#!/bin/sh
+echo ""
+echo "curl ipinfo.io/$1"
+/usr/bin/curl ipinfo.io/$1
+echo ""
+echo ""
+echo "whois -h v4.whois.cymru.com -v $1"
+whois -h v4.whois.cymru.com -v $1
+echo ""
+echo ""
+echo "geoiplookup $1"
+/usr/bin/geoiplookup $1
+echo ""
